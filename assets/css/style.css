@@ -1,5 +1,5 @@
 :root {
-  --bs-primary-v2: #ea7822;
+  --bs-primary-v2: #fff;
   --bs-primary-bg-v2: linear-gradient(to top, #4f40d4 0%, #61488d 100%);
   --bs-primary-custom: #ea7822;
   --bs-body-bg: #030015 !important;
@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 html {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .navbar-custom {
   backdrop-filter: blur(3px);
@@ -41,8 +41,17 @@ nav.navbar {
 .btn-primary-default,
 .bg-primary-default {
   background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%);
-  border: 1px solid rgba(115, 101, 153, 1) !important;
+  border: 1px solid rgba(115, 101, 153, 1);
   border-radius: 10px !important;
+}
+.btn-start {
+  font-size: 18px !important;
+  width: calc(10rem + 1.5vw);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  padding: 10px 30px !important;
 }
 .badge.bg-primary-default {
   color: rgba(213, 212, 252, 1);
@@ -65,6 +74,17 @@ nav.navbar {
     font-size: calc(2.325rem + 1.5vw) !important;
   }
 }
+@media screen and (min-width: 992px) {
+  nav .nav-item .nav-link.btn.btn-primary-default {
+    background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%) !important;
+    border: 1px solid rgba(115, 101, 153, 1) !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav .nav-item .nav-link.btn.btn-primary-default {
+    border: 0 !important;
+  }
+}
 .introduction-size {
   font-size: calc(1.5rem + 1.5vw) !important;
   background: linear-gradient(187.52deg, #f5f5f5 50.36%, #8f8f8f 98.75%);
@@ -74,7 +94,7 @@ nav.navbar {
 /* anmition start */
 .img-anmition {
   z-index: -1;
-  width: calc(100% - 29vw);
+  width: clamp(calc(100% - 22vw), 24vw, 100%);
   top: 100%;
   left: 50%;
   overflow: hidden;
@@ -132,7 +152,18 @@ nav.navbar {
   max-width: calc(100% - 30vw);
   padding-left: 0px;
 }
+@media screen and (min-width:1300px) {
+  .container-custom {
+    max-width: calc(100% - 430px);
+    padding-left: 0px;
+}
+}
 @media screen and (max-width: 991px) {
+  nav.nav-.btn.btn-primary-default {
+    border: 0 !important;
+    border-radius: 0;
+    background: transparent;
+  }
   .filter-img img {
     height: calc(87px + 2vw);
     max-height: none;
@@ -150,19 +181,19 @@ nav.navbar {
 }
 @media screen and (max-width: 745px) {
   .img-anmition {
-    width: calc(100% - 10vw);
-    top: calc(135% - 5vw);
-  }
+    width: clamp(calc(100% - 9vw), 0vw, 300px);
+    top: clamp(calc(112% - 2vw), 7vw, calc(112% - 2vw));
+}
 }
 @media screen and (max-width: 530px) {
   .img-anmition {
     width: calc(100% - 6vw);
-    top: calc(145% - 9vw);
+    top: clamp(calc(100% - 22vw), 31vw, 80%);
   }
 }
 @media screen and (max-width: 390px) {
   .img-anmition {
-    width: calc(100% - 4vw);
+    width:100%;
     top: 18vw;
   }
 }
@@ -227,7 +258,7 @@ nav.navbar {
 /* card hover event end */
 
 .w-text-md {
-  max-width: 520px;
+  max-width: 630px;
   width: 100%;
   margin: auto;
 }
@@ -235,6 +266,57 @@ nav.navbar {
   cursor: pointer;
 }
 /* section features end */
+
+/* section features anmition start */
+
+/* section features anmition end */
+
+
+/* section Partners start */
+  /* library owl custom */
+  .owl-carousel .item {
+    margin: 10px !important;
+    padding: 8%;
+  }
+  .owl-carousel .owl-stage {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+  }
+  .owl-carousel::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(3, 0, 21, 0) 0%, #030015 100%);
+    z-index: 1;
+    top: 0;
+    right: -1px;
+  }
+  .owl-carousel::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(90deg, #030015 0%, rgba(3, 0, 21, 0) 100%);
+    z-index: 1;
+    top: 0;
+    left: -1px;
+  }
+
+  @media screen and (max-width:400px) {
+    .owl-carousel .item {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  /* library owl custom end */
+
+/* section Partners end */
+
 /* end content home page */
 
 .text-primary-2 {

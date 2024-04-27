@@ -14,6 +14,16 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- link library owl -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- /link library owl -->
     <!-- link fontawosme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- google fonts -->
@@ -36,7 +46,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">منتجاتنا</a>
               </li>
@@ -47,9 +57,15 @@
                 <a class="nav-link" aria-current="page" href="#">مشتريكينا</a>
               </li>
             </ul>
-            <div class="d-flex gap-2 me-auto btn-groub">
-              <a class="btn">تسجيل الدخول</a>
-              <a class="btn btn-primary-default">ابدا التجربة المجانية</a>
+            <div class="d-flex flex-lg-row flex-column gap-2 me-auto btn-groub">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="btn nav-link text-end">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-primary-default text-lg-center text-end ">ابدا التجربة المجانية</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -59,21 +75,21 @@
 
     <div class="content pt-5 mt-5 text-center">
 
-      <span class="badge rounded-pill bg-primary-default mb-3">
-        <span class="ms-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 0C16.626 0 16.9714 0.34538 16.9714 0.771429C16.9714 1.11242 17.1069 1.43945 17.348 1.68057C17.5891 1.92168 17.9161 2.05714 18.2571 2.05714C18.6832 2.05714 19.0286 2.40252 19.0286 2.82857C19.0286 3.25462 18.6832 3.6 18.2571 3.6C17.9161 3.6 17.5891 3.73546 17.348 3.97658C17.1069 4.2177 16.9714 4.54472 16.9714 4.88571C16.9714 5.31176 16.626 5.65714 16.2 5.65714C15.774 5.65714 15.4286 5.31176 15.4286 4.88571C15.4286 4.54472 15.2931 4.2177 15.052 3.97658C14.8109 3.73546 14.4838 3.6 14.1429 3.6C13.7168 3.6 13.3714 3.25462 13.3714 2.82857C13.3714 2.40252 13.7168 2.05714 14.1429 2.05714C14.4838 2.05714 14.8109 1.92168 15.052 1.68057C15.2931 1.43945 15.4286 1.11242 15.4286 0.771429C15.4286 0.34538 15.774 0 16.2 0ZM6.94286 2.05714C7.3689 2.05714 7.71428 2.40252 7.71428 2.82857C7.71428 4.26074 8.28321 5.63425 9.29591 6.64695C10.3086 7.65964 11.6821 8.22857 13.1143 8.22857C13.5403 8.22857 13.8857 8.57395 13.8857 9C13.8857 9.42605 13.5403 9.77143 13.1143 9.77143C11.6821 9.77143 10.3086 10.3404 9.29591 11.3531C8.28321 12.3657 7.71428 13.7393 7.71428 15.1714C7.71428 15.5975 7.3689 15.9429 6.94286 15.9429C6.51681 15.9429 6.17143 15.5975 6.17143 15.1714C6.17143 13.7393 5.6025 12.3657 4.5898 11.3531C3.57711 10.3404 2.2036 9.77143 0.771429 9.77143C0.34538 9.77143 0 9.42605 0 9C0 8.57395 0.34538 8.22857 0.771429 8.22857C2.2036 8.22857 3.57711 7.65964 4.5898 6.64695C5.6025 5.63425 6.17143 4.26074 6.17143 2.82857C6.17143 2.40252 6.51681 2.05714 6.94286 2.05714ZM16.2 12.3429C16.626 12.3429 16.9714 12.6882 16.9714 13.1143C16.9714 13.4553 17.1069 13.7823 17.348 14.0234C17.5891 14.2645 17.9161 14.4 18.2571 14.4C18.6832 14.4 19.0286 14.7454 19.0286 15.1714C19.0286 15.5975 18.6832 15.9429 18.2571 15.9429C17.9161 15.9429 17.5891 16.0783 17.348 16.3194C17.1069 16.5606 16.9714 16.8876 16.9714 17.2286C16.9714 17.6546 16.626 18 16.2 18C15.774 18 15.4286 17.6546 15.4286 17.2286C15.4286 16.8876 15.2931 16.5606 15.052 16.3194C14.8109 16.0783 14.4838 15.9429 14.1429 15.9429C13.7168 15.9429 13.3714 15.5975 13.3714 15.1714C13.3714 14.7454 13.7168 14.4 14.1429 14.4C14.4838 14.4 14.8109 14.2645 15.052 14.0234C15.2931 13.7823 15.4286 13.4553 15.4286 13.1143C15.4286 12.6882 15.774 12.3429 16.2 12.3429Z" fill="#D5D4FC"/>
-          </svg>
-        </span>
-        بستخدام الذكاء الاصطناعي  
-      </span>
-
+      
       <!-- header home page -->
       <div class="header mb-5">
-        <h1 class="introduction-size mb-sm-4 mb-4 text-center py-2">
+        <span class="badge rounded-pill bg-primary-default mb-3">
+          <span class="ms-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 0C16.626 0 16.9714 0.34538 16.9714 0.771429C16.9714 1.11242 17.1069 1.43945 17.348 1.68057C17.5891 1.92168 17.9161 2.05714 18.2571 2.05714C18.6832 2.05714 19.0286 2.40252 19.0286 2.82857C19.0286 3.25462 18.6832 3.6 18.2571 3.6C17.9161 3.6 17.5891 3.73546 17.348 3.97658C17.1069 4.2177 16.9714 4.54472 16.9714 4.88571C16.9714 5.31176 16.626 5.65714 16.2 5.65714C15.774 5.65714 15.4286 5.31176 15.4286 4.88571C15.4286 4.54472 15.2931 4.2177 15.052 3.97658C14.8109 3.73546 14.4838 3.6 14.1429 3.6C13.7168 3.6 13.3714 3.25462 13.3714 2.82857C13.3714 2.40252 13.7168 2.05714 14.1429 2.05714C14.4838 2.05714 14.8109 1.92168 15.052 1.68057C15.2931 1.43945 15.4286 1.11242 15.4286 0.771429C15.4286 0.34538 15.774 0 16.2 0ZM6.94286 2.05714C7.3689 2.05714 7.71428 2.40252 7.71428 2.82857C7.71428 4.26074 8.28321 5.63425 9.29591 6.64695C10.3086 7.65964 11.6821 8.22857 13.1143 8.22857C13.5403 8.22857 13.8857 8.57395 13.8857 9C13.8857 9.42605 13.5403 9.77143 13.1143 9.77143C11.6821 9.77143 10.3086 10.3404 9.29591 11.3531C8.28321 12.3657 7.71428 13.7393 7.71428 15.1714C7.71428 15.5975 7.3689 15.9429 6.94286 15.9429C6.51681 15.9429 6.17143 15.5975 6.17143 15.1714C6.17143 13.7393 5.6025 12.3657 4.5898 11.3531C3.57711 10.3404 2.2036 9.77143 0.771429 9.77143C0.34538 9.77143 0 9.42605 0 9C0 8.57395 0.34538 8.22857 0.771429 8.22857C2.2036 8.22857 3.57711 7.65964 4.5898 6.64695C5.6025 5.63425 6.17143 4.26074 6.17143 2.82857C6.17143 2.40252 6.51681 2.05714 6.94286 2.05714ZM16.2 12.3429C16.626 12.3429 16.9714 12.6882 16.9714 13.1143C16.9714 13.4553 17.1069 13.7823 17.348 14.0234C17.5891 14.2645 17.9161 14.4 18.2571 14.4C18.6832 14.4 19.0286 14.7454 19.0286 15.1714C19.0286 15.5975 18.6832 15.9429 18.2571 15.9429C17.9161 15.9429 17.5891 16.0783 17.348 16.3194C17.1069 16.5606 16.9714 16.8876 16.9714 17.2286C16.9714 17.6546 16.626 18 16.2 18C15.774 18 15.4286 17.6546 15.4286 17.2286C15.4286 16.8876 15.2931 16.5606 15.052 16.3194C14.8109 16.0783 14.4838 15.9429 14.1429 15.9429C13.7168 15.9429 13.3714 15.5975 13.3714 15.1714C13.3714 14.7454 13.7168 14.4 14.1429 14.4C14.4838 14.4 14.8109 14.2645 15.052 14.0234C15.2931 13.7823 15.4286 13.4553 15.4286 13.1143C15.4286 12.6882 15.774 12.3429 16.2 12.3429Z" fill="#D5D4FC"/>
+            </svg>
+          </span>
+          بستخدام الذكاء الاصطناعي  
+        </span>
+        <h1 class="introduction-size mb-sm-5 mb-5 text-center py-2">
           ارفع الانتاجية وريح بالك
         </h1>
-        <a href="#" class="btn btn-primary-default-v2 px-5 mb-sm-3 mb-1">ابدا الان</a>
+        <a href="#" class="btn btn-start btn-primary-default-v2 mb-sm-3 mb-2">ابدا الان</a>
         <div class="position-relative h-auto">
           <div class="img-anmition position-absolute">
             <img class="w-100" src="assets/images/anmition-img.svg" alt="" srcset="">
@@ -92,7 +108,7 @@
       <!-- /header home page -->
 
       <!-- features section -->
-      <section class="features">
+      <section class="features mb-5">
         <h1 class="introduction-size mb-3 text-center py-2">
           .... يجعل رؤيتك واقعاً يتحقق
         </h1>
@@ -286,11 +302,78 @@
 
       </section>
       <!-- /features section -->
+
+        <!-- features animation section -->
+        <section class="features animation mb-5 pb-5">
+
+          <!--  features img animation-->
+          <div class="container">
+            
+          </div>
+          <!-- / features img animation-->
+
+          <div class="text">
+            <h1 class="introduction-size mb-3 text-center py-2">
+              كن على اطلاع على كل ما يحدث
+            </h1>
+            <p class="text-center text-white w-text-md text-break mb-4">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق..
+            </p>
+          </div>
+  
+        </section>
+        <!-- /features animation section -->
+
+        <!-- Partners section -->
+        <section class="features animation mb-5 pb-5">
+
+          <!--  content Partners img -->
+          <div class="content Partners position-relative">
+            <div class="owl-carousel remove-arrow">
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/a2e7/9ff1/c20561823a66e4274777d755cd1037f8?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NM4vLb9N4BAhFQLxjYYtt9QSSyDMOAXT-E38v8wbqvov~IWq48A0iCOjMzWvycTFlWnHr-mjrF4y3HAN7YD3RRSSfN6u1JTvcv54obGvYMogfNI7ly4jcSr2SyqDRd3jB4r3Z8bK2ywvq1-ljDnhz5gYeLnO7AfrkweEgY-65b24Wdu1sYnCmEMJDNyUISbec1qsbb-NjgEQYgTQvS1FXRdRLcCPdzWkUXl2xrRVg741QzUp0RuGAY~QZIs6voIo5uZW-LBSwO25X32Sru-eqJHNtoo7K2NMUKBN8L044XBwJsUDOx0LvZ34EhUGXIl84SkT56AmsMDG4CT2fhFrQQ__" alt="Image 1" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/85fe/3691/74eed392192b8048482c0386142a6359?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oMcY4Bg05XdXT3UiDbGjsAgNEp4v0mrhMHhHzI5UXN72ZHodvbF4YLlJ~twpaIBBFKk78h5mMXkJopQeAjfJ87uWF6Ct4rdrF6rOzwEND8p2LfRmu63uSnpyUehhlye96-lP9665J3aRfOlKtyXnvINUyJZrts~RsaYoLW2mxGMrm5WhDK5jdfl5CUGVJRnPIdFPg3J57HDmRv-OStDUEL42pBr4~sSGCKmj6H7~ta9Pm~G5jjSkB9v1-CWBoGDtlmaeCi3jYdOPgih7mSiD3jLgLrKJHfHEnsNDGOx2g8jMUxMzc6NGoKzU94P3r6JmyEHOuOFwATLo98f26k-3EA__" alt="Image 2" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/96e3/b3aa/a29e54a3d58d2ef460ef473da5d2631a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TXVvx7jNe~fRAPlKy4NWvTnBvuDx3tfL7txXe4~abLMnTtuhw7-~O4318EXJ-d2PVEXwcrFM9TpFCCsld45m-1SIOHhVE7fq7dD3NyWsIqH7RHgcQJ6XBhea23PqwfbsthxJZIQun6-zYSwsld1EEXkSjsNTAf8KYUoTvxvlmuZZYYkWdf-EueMEtvRA3xQtnhdTrTtskU4zO9uNLYd2xgS9YDYRiuE9qN4Btbo0BqZv5dOgf1bmrJycNGyY4Q6UFsT~wQ1Ta6Fio7jCLXrXrsOm4OgB~xzdHzQ5joOhUFrwqdaeS3URjrntXljCMiR61Wx9GWT37kAveBDloCpP7g__" alt="Image 3" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/c48e/37f6/b3cf6ef81208b5303d8e9581aad0078f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bDxHdhwh1r3pXEgoB8GVHbOhIx~2gCC1SEXeRG3lMuR6wFLCM~g00nS31c5rs9TZwDx6DunUm0e0qp12jbI9r8oz8QCybMyIZftn9slcqcn0H5VJ88sX3LWboUlsb-JLGyqLR-xpjD-KShiHKlyN7jRCUm-Vwg-00GrWljbZevC~i4St0iOswvIwR7pr9UJe7DkYcsbBbUIdD4iAlnc5cVR-jni2ISv9SGNk6fTG9HDsP1V0LqPmOP9mIaMsY4PASkT~ZuNBDcI4dQuuR0V8~8MeyLtd0XOzX~QmvfoIBnHRsnRWMA5CMU1hvgvQNXMlEuhIht1uViTJb7ep4g8nLA__" alt="Image 4" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/6f8f/2320/9e29a2f118189884d62821c061cb77c1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NWSGMBkHrnDx11SPkpSqwFyJYeCTPLU3cCV8h0-EsKgYYisv2cEm~0XYLNzyXbT-breEiImv4oKixq2A8NCLUWhOf2g0WRmnU0BVIM6wN3s6wrCV8-c0PdUahkJ5eRQcooTyf1piwn88kLZ4PPRJezwbPo~pHKtLHl01MiGP-vZ3TFQXqiGUKr8lrCwlACvmafN2fD~K7BKWYdb1pIzaQuZ0ibLshctrA3t~RgH4kXAJFiMRmX0zGo214muCr5nt9Qmt9bKy2VcTP9J4jyz5pjz~4CN0hhabv2zPU9YFavTXsOUFwqsozeqCnFeZO4ds7PBz~~hz6PqEimSj3Dnolg__" alt="Image 5" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/da6f/ff4b/3e27c64e2e69d83f4c33fbdbd93d3d10?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RYfQMc73~KimasV1RU6jRzsTUjyWVouxUJ6VE26QJegbD8qCvDFLvd14As~Vy76euCCLZyrpqKzAVLBgFn7NfSXnwMQBstOUNen3OU6n4A~HvLuEXE4NRAMGwWMw2quBM5zXuz9ifY0hrqanIRq0iHJmZaly7L9xGCpdScQSWcKqTV~1B3Kt2qdLU1Tj3~B2JCdXJQ8eXykhvNCdMF8VqVni8oyywNBKZy4PB1BJuMJMgwE4LWddxTfUuqTTXSOVEm1mEsLEm1v6WkQoXF9EnbK6ttrvAvyu7u4P46ejvKU59Xa2XVINyntOMh6OtC841~H-HoDkDZW0tBl3kfj48g__" alt="Image 6" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/16a7/5b07/fa4e0ae7c44b694cdc21cfbd943bb582?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=khBu34ZbcRC1wMe3pvG~6IAideUDJ6tlfiapoyy9pD-qYuT~p4pzm3RqqD78AgYH-rUyQS8U2Y44-wVaMqGH9jGOSnQDfa5ehiYna0GouIgSa~~AEtcit57EH-bM4kprRLNdlktZZZmYghl7ye09IK2tshMngonXbGqzC7cQv-3P0ophoQ-c-wAKupmrSKjXKk140JisFpVApibs8wTylh0nBNKul2Wj-UTM2jlXrE1V3LCVisYqtrVK7Mh8aSORM2dtlYE8ak4yjoh1CKSuit508ubv7IoAQ2npIEA6fr5oGE6Dfs3k1EC~Qt0cbzcCXKaju~QLlkY9EXV8Bf2zLg__" alt="Image 7" />
+              </div>
+
+              <div class="item d-flex justify-content-center align-items-center">
+                <img src="https://s3-alpha-sig.figma.com/img/4323/658b/e128a41dce182a33509faead22924c04?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qgNEjDeh2B8LhSZDrxcbDrx~mYwJjLQrHMCWGs5rgqlY7g9lEjPfglJbYpW-LXTypBiH3TLAL-B2qdONYE4DDGR7a85eiRXG1kVsndSWIWw4iTOjjaNbIp1bhsRz7AUVNMeqSdgiJFBI3RoPetB0xGhdsSanPq8BErI628HQAUAqx5LXtdjNwQ-Y3Bn1tfDHzh74wNIBTXmzA6udRw1iu91WUcVFnT6oj12WWbAIgld0PF2TCU2ZNKK7iyE~Azwn~ipnpvBb5deMSIy2~86g4us9tJMq2O4CSaw5onrZJ-rsyGbJn~4csEodysPVCpfHxzd5c6Z1ofQSPcgTYjxx5A__" alt="Image 8" />
+              </div>
+
+            </div>
+          </div>
+          <!-- / content Partners img -->
+  
+        </section>
+        <!-- /Partners section -->
       
     </div>
     <!-- /content page -->
       <!-- footer -->
-        <footer class="footer-strip sm-padding-30px-tb mt-auto ">
+      <footer class="footer-strip sm-padding-30px-tb mt-auto ">
           <div class="py-5">
               <div class="row align-items-center justify-content-between py-3 px-sm-5 px-2 gap-md-0 gap-3 rounded-3">
                   <!-- start logo -->
@@ -374,5 +457,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- code Partners -->
+    <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+              autoWidth: true,
+              center: true, 
+              loop: true, 
+              margin: 30,
+              nav: false, 
+              rtl: true,
+              responsive: {
+                  1: {
+                      margin: 20,
+                      autoHeight: false,
+                      items: 1, 
+                      stagePadding: 10, 
+                  }, 1000: {
+                      items: 3, 
+                      stagePadding: 150, 
+                  },
+              },
+              autoplay: true,
+              autoplayTimeout: 3000,
+              autoplayHoverPause: true,
+              animateOut: "slideOutRight",
+              animateIn: "slideInLeft",
+              smartSpeed: 1500,
+          });
+        });
+    </script>
+    <!-- /code Partners -->
+
   </body>
 </html>
