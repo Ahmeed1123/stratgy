@@ -79,6 +79,9 @@ nav.navbar {
     background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%) !important;
     border: 1px solid rgba(115, 101, 153, 1) !important;
   }
+  nav .nav-item .nav-link.btn {
+    color: #fff !important;
+  }
 }
 @media screen and (max-width: 991px) {
   nav .nav-item .nav-link.btn.btn-primary-default {
@@ -314,7 +317,19 @@ nav.navbar {
     }
   }
   /* library owl custom end */
-
+.container-anmition {
+  max-width: calc(70% - 6.5vw);
+}
+@media screen and (min-width:1400px) {
+  .container-anmition {
+    max-width: calc(60% - 2.5vw);
+  }
+}
+@media screen and (max-width:750px) {
+  .container-anmition {
+    max-width: 100%;
+  }
+}
 /* section Partners end */
 
 /* end content home page */

@@ -24,6 +24,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <!-- /link library owl -->
+
+    <!-- anmition library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /anmition library  -->
+
     <!-- link fontawosme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- google fonts -->
@@ -33,7 +38,7 @@
   </head>
   <body>
     <div
-      class="container-sm  custome d-flex flex-column w-100 px-4 pt-0 rounded-5 position-relative"
+      class="container-sm  custome d-flex flex-column w-100 px-sm-4 px-3 pt-0 rounded-5 position-relative"
     >
     <div class="navbar-custom pt-3 pb-0 sticky-top rounded-bottom-3">
       <nav class="navbar text-white navbar-expand-lg bg-body-transparent mt-3 rounded-3 w-100">
@@ -59,11 +64,11 @@
             </ul>
             <div class="d-flex flex-lg-row flex-column gap-2 me-auto btn-groub">
               <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="btn nav-link text-end">تسجيل الدخول</a>
+                <li class="nav-item ms-lg-3">
+                  <a class="btn nav-link text-end" href="#">تسجيل الدخول</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-primary-default text-lg-center text-end ">ابدا التجربة المجانية</a>
+                  <a class="nav-link btn btn-primary-default text-lg-center text-end" href="#">ابدا التجربة المجانية</a>
                 </li>
               </ul>
             </div>
@@ -307,8 +312,8 @@
         <section class="features animation mb-5 pb-5">
 
           <!--  features img animation-->
-          <div class="container">
-            
+          <div class="container-anmition mx-auto">
+            <img src="assets/images/animtion-ezgif.com-video-to-gif-converter.gif" class="w-100">
           </div>
           <!-- / features img animation-->
 
@@ -467,17 +472,20 @@
             loop: true,
             rtl:true,
             center: true,
-            slideTransition: 'ease-in-out',
+            slideTransition: 'ease',
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
+            // animateOut: "slideOutRight",
+            // animateIn: "slideInLeft",
             smartSpeed: 1500,
             responsive: {
                 0: {
                     items: 1,
-                    margin: 30,
+                    margin: 40,
+                    stagePadding: 40, 
                 },
-                600: {
+                400: {
                     items: 2,
                     margin: 50,
                 },
@@ -492,6 +500,7 @@
 
     <!-- code Partners -->
     <!-- <script>
+      
       $(document).ready(function () {
           $(".owl-carousel").owlCarousel({
               nav: false,
@@ -500,15 +509,17 @@
               loop: true,
               center: true,
               autoplay: true,
+              // animateOut: "slideOutRight",
+              // animateIn: "slideInLeft",
               slideTransition: 'linear',
               autoplayHoverPause: true,
-              autoplaySpeed: 3000,
-              autoplayTimeout: 3000,
-              animateOut: "slideInLeft",
-              animateIn: "slideOutRight",
-              smartSpeed: 1500,
-              lazyLoad: true,
-              lazyLoadEager: 2,
+              autoplaySpeed: 1500,
+              autoplayTimeout: 1500,
+              // animateOut: "fadeInLeft",
+              // animateIn: "fadeInRight",
+              smartSpeed: 500,
+              // lazyLoad: true,
+              // lazyLoadEager: 4,
               responsiveClass: true,
               responsive: {
                   1: {
