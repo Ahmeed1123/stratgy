@@ -59,10 +59,11 @@ nav.navbar {
   cursor: pointer;
 }
 .btn-primary-default-v2 {
-  background: linear-gradient(90deg, #4f40d4 0%, #61488d 100%);
+  background: linear-gradient(90deg, #2E55D5 0%, #F356FD 100%);
   border: 1px solid rgba(115, 101, 153, 1);
+  border: 0 !important;
   border-radius: 10px;
-  font-size: 13px !important;
+  font-size: 15px !important;
 }
 @media screen and (min-width: 1200px) {
   .introduction-size {
@@ -78,6 +79,7 @@ nav.navbar {
   nav .nav-item .nav-link.btn.btn-primary-default {
     background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%) !important;
     border: 1px solid rgba(115, 101, 153, 1) !important;
+    padding: 5px 25px;
   }
   nav .nav-item .nav-link.btn {
     color: #fff !important;
@@ -90,7 +92,7 @@ nav.navbar {
 }
 .introduction-size {
   font-size: calc(1.5rem + 1.5vw) !important;
-  background: linear-gradient(187.52deg, #f5f5f5 50.36%, #8f8f8f 98.75%);
+  background: linear-gradient(180deg, #f5f5f5 36.36%, #8f8f8f 99.75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -152,12 +154,12 @@ nav.navbar {
 }
 
 .container-custom {
-  max-width: calc(100% - 30vw);
+  max-width: calc(100% - 22vw);
   padding-left: 0px;
 }
 @media screen and (min-width:1300px) {
   .container-custom {
-    max-width: calc(100% - 430px);
+    max-width: calc(100% - 330px);
     padding-left: 0px;
 }
 }
@@ -189,6 +191,10 @@ nav.navbar {
 }
 }
 @media screen and (max-width: 530px) {
+  .container-custom {
+    max-width: calc(100% - 30vw);
+    padding-left: 0px;
+  }
   .img-anmition {
     width: calc(100% - 6vw);
     top: clamp(calc(100% - 22vw), 31vw, 80%);
@@ -432,7 +438,7 @@ nav.navbar {
 }
 /* custome footer start */
 footer .row {
-  background: rgba(7, 5, 25, 1);
+  background: rgba(11, 8, 38, 1);
 }
 .footer-logos img {
   max-width: 50px;
