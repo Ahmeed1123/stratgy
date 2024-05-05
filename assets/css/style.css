@@ -447,7 +447,7 @@ nav.navbar.bg-glassy {
   color: var(--bs-primary-v2) !important;
 }
 /* custome footer start */
-footer .row {
+footer .footer {
   background: rgba(11, 8, 38, 1);
 }
 .footer-logos img {
