@@ -77,13 +77,16 @@ nav.navbar.bg-glassy {
   .introduction-size {
     font-size: 3.75rem !important;
   }
+  .fs-introduction-sm {
+    font-size:calc(.5rem + .9vw) !important;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .introduction-size {
     font-size: calc(2.325rem + 1.5vw) !important;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   nav .nav-item .nav-link.btn.btn-primary-default {
     background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%) !important;
     border: 1px solid rgba(115, 101, 153, 1) !important;
@@ -100,11 +103,16 @@ nav.navbar.bg-glassy {
 }
 .introduction-size {
   font-size: calc(1.5rem + 1.5vw) !important;
-  background: linear-gradient(180deg, #f5f5f5 36.36%, #8f8f8f 99.75%);
   letter-spacing: -0.05vw;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+.introduction-size ,
+.fs-introduction-sm {
+  background: linear-gradient(180deg, #f5f5f5 36.36%, #8f8f8f 99.75%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.fs-introduction-sm {
+  font-size: calc(.7rem + 1vw) ;
 }
 /* anmition start */
 .img-anmition {
@@ -235,8 +243,10 @@ nav.navbar.bg-glassy {
   background: linear-gradient(180deg, #030015 0%, #100e20 100%) !important;
 }
 .card .icon {
-  border-right: 3px solid rgba(85, 84, 96, 1);
-}
+  display: flex;
+  align-items: center;
+  border-right: 3px solid rgb(85, 84, 96);
+  height: 20px;}
 
 .card .learn-more {
   background: var(--bs-primary-bg-v2);
@@ -253,6 +263,10 @@ nav.navbar.bg-glassy {
   color: var(--bs-primary-custom);
   position: relative;
   transition: all 0.3s ease-in-out;
+}
+.card .icon svg {
+  width: 34px;
+  height: 34px;
 }
 /* card hover event start */
 .card:hover .icon svg,
