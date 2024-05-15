@@ -86,7 +86,7 @@ nav.navbar.bg-glassy {
     font-size: calc(2.325rem + 1.5vw) !important;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   nav .nav-item .nav-link.btn.btn-primary-default {
     background: radial-gradient(50% 50% at 50% 50%, #2b1c57 0%, #150a3b 100%) !important;
     border: 1px solid rgba(115, 101, 153, 1) !important;
