@@ -310,6 +310,10 @@ nav.navbar.bg-glassy {
   .owl-carousel .item {
     margin: 10px !important;
     padding: 8%;
+    width: 100%;
+  }
+  .owl-carousel .owl-item img {
+    width: 90%;
   }
   .owl-carousel .owl-stage {
     display: flex !important;
